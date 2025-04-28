@@ -114,11 +114,10 @@ Action Models for Unseen Tasks</h1>
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -127,7 +126,7 @@ Action Models for Unseen Tasks</h1>
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -162,124 +161,82 @@ Action Models for Unseen Tasks</h1>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
-      <section class="section">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column is-full-width">
-                <h2 class="title is-3">Experiments</h2>
-                <h3 class="title is-4">Results on the LIBERO Benchmark</h3>
-                <img src="static/images/libero_table.jpg" />
-                <div class="content has-text-justified">
-
-                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <p>
-                        3D-CAVLA shows consistent improvement across all task suites in the dual camera setup. Most baselines overfit to the tasks and thus the margins are quite narrow. The strongest improvements are shown in long-horizon tasks (column 5) where chain-of-thought instructions helps the policy focus on one sub-task at a time. All scores are reported in success rate (%).
-                      </p>
-                    </tr>
-                    <tr>
-                      <td width="50%">
-                        <p>
-                          In our ablation studies, Row 2 presents results when LLM-prompted chain-of-thought (CoT) instructions are removed from our method. Row 3 demonstrates performance without the depth projector component. Row 4 reveals a small performance decrease when task-aware region of interest (TA-ROI) detection is added during evaluation on seen tasks.
-                        </p>
-                      </td>
-                      <td width="50%">
-                        <img src="static/images/ablation_table.jpg">
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <br>
-                <h3 class="title is-4">Generalization to Previously Unseen Tasks</h3>
-                <div class="content has-text-justified">
-                  <img src="static/images/unseen_taskwise_table.jpg" />
-                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <p>
-                        Success-rate (in %) of OpenVLA-OFT and 3D-CAVLA on 10 unseen tasks. Both models cannot replicate performance on
-                        seen tasks. 3D-CAVLA decomposes unseen tasks into seen steps and applies task-aware region-of-interest detection, enabling better
-                        generalization.
-                      </p>
-                    </tr>
-                  </table>
-                  
-                </div>
-                <br>
-                <h3 class="title is-4">Visualization: Generalization to Previously Unseen Tasks</h3>
-                <div class="content has-text-justified">
-                  <img src="static/images/unseen_table.jpg">
-                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <p>
-                        Qualitative comparisons of OpenVLA-OFT and 3D-CAVLA on unseen LIBERO tasks. We show first, middle, and last frames of
-                        each inference. The final two rows depict failures where both models misidentify target object or get distracted by previously seen objects.
-                      </p>
-                    </tr>
-                  </table>
-                </div>
-              <br>
-            </div>
-          </div>
-      </section>
-
-
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <img src="static/images/cot.jpg" alt="Description 1" style="max-width: 200px; margin-bottom: 1em;">
+        <p>An LLM Prompting Framework for Generalizable Instruction Decomposition.</p>
       </div>
-      <div class="item">
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
+      <div class="column has-text-centered">
+        <img src="static/images/tarp.jpg" alt="Description 2" style="max-width: 200px; margin-bottom: 1em;">
+        <p>Our Task-Aware Framework for Region of Interest Detection via Entity Recognition and Object Tracking.</p>
       </div>
     </div>
   </div>
-</section> -->
-<!-- End youtube video -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+          <h2 class="title is-3">Experiments</h2>
+          <h3 class="title is-4">Results on the LIBERO Benchmark</h3>
+          <img src="static/images/libero_table.jpg" />
+          <div class="content has-text-justified">
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <p>
+                  3D-CAVLA shows consistent improvement across all task suites in the dual camera setup. Most baselines overfit to the tasks and thus the margins are quite narrow. The strongest improvements are shown in long-horizon tasks (column 5) where chain-of-thought instructions helps the policy focus on one sub-task at a time. All scores are reported in success rate (%).
+                </p>
+              </tr>
+              <tr>
+                <td width="50%">
+                  <p>
+                    In our ablation studies, Row 2 presents results when LLM-prompted chain-of-thought (CoT) instructions are removed from our method. Row 3 demonstrates performance without the depth projector component. Row 4 reveals a small performance decrease when task-aware region of interest (TA-ROI) detection is added during evaluation on seen tasks.
+                  </p>
+                </td>
+                <td width="50%">
+                  <img src="static/images/ablation_table.jpg">
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          <h3 class="title is-4">Generalization to Previously Unseen Tasks</h3>
+          <div class="content has-text-justified">
+            <img src="static/images/unseen_taskwise_table.jpg" />
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <p>
+                  Success-rate (in %) of OpenVLA-OFT and 3D-CAVLA on 10 unseen tasks. Both models cannot replicate performance on
+                  seen tasks. 3D-CAVLA decomposes unseen tasks into seen steps and applies task-aware region-of-interest detection, enabling better
+                  generalization.
+                </p>
+              </tr>
+            </table>
+            
+          </div>
+          <br>
+          <h3 class="title is-4">Visualization: Generalization to Previously Unseen Tasks</h3>
+          <div class="content has-text-justified">
+            <img src="static/images/unseen_table.jpg">
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <p>
+                  Qualitative comparisons of OpenVLA-OFT and 3D-CAVLA on unseen LIBERO tasks. We show first, middle, and last frames of
+                  each inference. The final two rows depict failures where both models misidentify target object or get distracted by previously seen objects.
+                </p>
+              </tr>
+            </table>
+          </div>
+        <br>
+      </div>
+    </div>
+</section>
 
 
 <!-- Video -->
@@ -287,10 +244,7 @@ Action Models for Unseen Tasks</h1>
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-          <h3 class="title is-4">Rollout Videos: Evaluation on Unseen Tasks</h3>
-          <div class="content has-text-justified">
-            <p>Qualitative comparisons of OpenVLA-OFT and 3D-CAVLA on unseen LIBERO tasks.</p>
-          </div>
+          <h3 class="title is-4">Rollout Videos: Qualitative Comparisons of OpenVLA-OFT and 3D-CAVLA on unseen LIBERO tasks</h3>
           <div class="columns is-vcentered interpolation-panel">
             <div class="column  has-text-centered">
               <h5><b>OpenVLA-OFT:</b><br>Put the chocolate pudding on the plate</h5>
@@ -345,21 +299,6 @@ Action Models for Unseen Tasks</h1>
 <!-- End video-->
 
 
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
 <!--BibTex citation -->
 <!--   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -369,8 +308,7 @@ Action Models for Unseen Tasks</h1>
 </section> -->
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
