@@ -4,14 +4,12 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="3D-CAVLA is a vision-language-action model that integrates depth perception, chain-of-thought reasoning, and task-oriented pooling to improve 3D robotic manipulation and generalization to unseen tasks."/>
+  <meta property="og:title" content="3D-CAVLA: Enhancing 3D Robotic Manipulation with Chain-of-Thought Reasoning and Depth Awareness"/>
+  <meta property="og:description" content="Discover 3D-CAVLA, a model that advances 3D robotic manipulation by combining vision-language reasoning, depth features, and task-focused perception. Achieve higher success rates and stronger zero-shot generalization."/>
+  <meta property="og:url" content="https://your-website-link-here"/>
+
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -24,8 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>3D-CAVLA: Leveraging Depth and 3D Context to Generalize Vision–Language
-Action Models for Unseen Tasks</title>
+  <title>3D-CAVLA: Leveraging Depth and 3D Context to Generalize Vision–Language Action Models for Unseen Tasks</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -66,22 +63,21 @@ Action Models for Unseen Tasks</h1>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">CVPR 2025</span>
-<!--                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    <span class="author-block">
+                <a target="_blank">Vineet Bhat</a>,</span>
+                <span class="author-block">
+                  <a target="_blank">Yu-Hsiang Lan</a>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Prashanth Krishnamurthy</a>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Ramesh Karri</a>,</span>                    
+                  <span class="author-block">
+                    <a target="_blank">Farshad Khorrami</a>,</span>                    
                   </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="#" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">New York University</span>
+                  </div>
                       
                   <!-- Github link -->
                   <span class="link-block">
@@ -167,10 +163,6 @@ Action Models for Unseen Tasks</h1>
   <div class="container is-max-desktop">
     <div class="columns is-centered is-flex-direction-column">
       <div class="column has-text-centered">
-        <img src="static/images/cot.jpg" alt="Description 1" style="max-width: 400px; margin-bottom: 1em;">
-        <p>An LLM Prompting Framework for Generalizable Instruction Decomposition.</p>
-      </div>
-      <div class="column has-text-centered">
         <img src="static/images/tarp.jpg" alt="Description 2" style="max-width: 400px; margin-bottom: 1em;">
         <p>Our Task-Aware Framework for Region of Interest Detection via Entity Recognition and Object Tracking.</p>
       </div>
@@ -193,20 +185,10 @@ Action Models for Unseen Tasks</h1>
                   3D-CAVLA shows consistent improvement across all task suites in the dual camera setup. Most baselines overfit to the tasks and thus the margins are quite narrow. The strongest improvements are shown in long-horizon tasks (column 5) where chain-of-thought instructions helps the policy focus on one sub-task at a time. All scores are reported in success rate (%).
                 </p>
               </tr>
-              <tr>
-                <td width="50%">
-                  <p>
-                    In our ablation studies, Row 2 presents results when LLM-prompted chain-of-thought (CoT) instructions are removed from our method. Row 3 demonstrates performance without the depth projector component. Row 4 reveals a small performance decrease when task-aware region of interest (TA-ROI) detection is added during evaluation on seen tasks.
-                  </p>
-                </td>
-                <td width="50%">
-                  <img src="static/images/ablation_table.jpg">
-                </td>
-              </tr>
             </table>
           </div>
           <br>
-          <h3 class="title is-4">Generalization to Previously Unseen Tasks</h3>
+          <h3 class="title is-4">Performance on unseen tasks</h3>
           <div class="content has-text-justified">
             <img src="static/images/unseen_taskwise_table.jpg" />
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
@@ -221,7 +203,7 @@ Action Models for Unseen Tasks</h1>
             
           </div>
           <br>
-          <h3 class="title is-4">Visualization: Generalization to Previously Unseen Tasks</h3>
+          <h3 class="title is-4">Robot demonstrations on unseen tasks</h3>
           <div class="content has-text-justified">
             <img src="static/images/unseen_table.jpg">
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
@@ -300,12 +282,20 @@ Action Models for Unseen Tasks</h1>
 
 
 <!--BibTex citation -->
-<!--   <section class="section" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+<!--       <pre><code>@misc{bhandari2025masalachailargescalespicenetlist,
+      title={Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI}, 
+      author={Jitendra Bhandari and Vineet Bhat and Yuheng He and Hamed Rahmani and Siddharth Garg and Ramesh Karri},
+      year={2025},
+      eprint={2411.14299},
+      archivePrefix={arXiv},
+      primaryClass={cs.AR},
+      url={https://arxiv.org/abs/2411.14299}, 
+}</code></pre> -->
     </div>
-</section> -->
+</section>
 <!--End BibTex citation -->
 
 <footer class="footer">
